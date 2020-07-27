@@ -1,11 +1,7 @@
 <!doctype html>
 <html>
-    <head>
-        <title>Последние обновления | Yatube</title>
-    </head>
-    <body>
     {% extends "base.html" %}
-    {% block title %}Последние обновления на сайте{% endblock %}
+    {% block title %}Последние обновления на сайте | Yatube{% endblock %}
     {% block header %}Последние обновления на сайте{% endblock %}
     {% block content %}
 
@@ -16,7 +12,5 @@
         <p>{{ post.text|linebreaksbr }}</p>
         {% if not forloop.last %}<hr>{% endif %}
         {% endfor %}
-
-{% endblock %}
-    </body>
+    {% endblock %}
 </html>
